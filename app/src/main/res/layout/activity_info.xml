@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rr.virtual_hospital.info.InfoActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+        android:id="@+id/buttonhos"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="10dp"
+        android:drawableTop="@drawable/hospital"
+        android:paddingTop="30dp"
+        android:padding="16dp"
+        android:textSize="15dp"
+
+        android:text="Hopsital List"
+        android:background="@drawable/buttonnew"
+
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/buttondia"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Diagnostics"
+        android:paddingTop="30dp"
+        android:padding="16dp"
+
+        android:textSize="15dp"
+        android:background="@drawable/buttonnew"
+        android:drawableTop="@drawable/cardiogram"
+        android:layout_alignTop="@+id/buttonhos"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/buttonamb"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="72dp"
+        android:text="Ambulance List"
+        android:paddingTop="30dp"
+        android:padding="16dp"
+        android:drawableTop="@drawable/ambulance"
+
+        android:textSize="15dp"
+        android:background="@drawable/buttonnew"
+        android:layout_below="@+id/buttonhos"
+        android:layout_alignLeft="@+id/buttonhos"
+        android:layout_alignStart="@+id/buttonhos" />
+
+    <Button
+        android:id="@+id/buttondoc"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_alignBottom="@+id/buttonamb"
+        android:layout_alignEnd="@+id/buttondia"
+        android:layout_alignRight="@+id/buttondia"
+        android:text="Doctor's List"
+        android:drawableTop="@drawable/doctors"
+        android:paddingTop="30dp"
+        android:textSize="15dp"
+        android:padding="16dp"
+        android:background="@drawable/buttonnew"/>
+
+    <Button
+        android:id="@+id/buttofirst"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_alignEnd="@+id/buttonamb"
+        android:layout_alignRight="@+id/buttonamb"
+        android:layout_below="@+id/buttonamb"
+        android:layout_marginTop="61dp"
+        android:text="First Aid"
+        android:paddingTop="30dp"
+        android:textSize="15dp"
+        android:padding="16dp"
+        android:drawableTop="@drawable/firstaidkit"
+        android:background="@drawable/buttonnew"/>
+
+    <Button
+        android:id="@+id/buttoncall"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:text="Call For Help"
+        android:background="@drawable/buttonnew"
+        android:layout_alignTop="@+id/buttofirst"
+        android:paddingTop="30dp"
+        android:textSize="15dp"
+        android:padding="16dp"
+        android:drawableTop="@drawable/phonecall"
+        android:layout_alignRight="@+id/buttondoc"
+        android:layout_alignEnd="@+id/buttondoc" />
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

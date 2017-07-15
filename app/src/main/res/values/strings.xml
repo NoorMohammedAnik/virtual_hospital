@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Virtual-Hospital</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!--
+        <string name="serverIp">https://ideabinbd.com/src/v_hosp/</string>
+ <string name="serverIp">http://10.0.3.2/virtual_hospital/</string>
+    -->
+
+    <string name="serverIp">https://ideabinbd.com/src/v_hosp/</string>
+
+    <string-array name="cities">
+        <item>All Cities</item>
+        <item>Dhaka</item>
+        <item>Chittagong</item>
+        <item>Rajshahi</item>
+        <item>Khulna</item>
+        <item>Barishal</item>
+        <item>Rangpur</item>
+        <item>Sylhet</item>
+    </string-array>
+
+    <string-array name="blood_groups">
+        <item>All Blood Groups</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>O+</item>
+        <item>O-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+    </string-array>
+    <string name="title_activity_main_nav_actitvity">MainNavActitvity</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_nav_user">NavUser</string>
+    <string name="title_activity_main__nav">Main_Nav</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+
+</resources>

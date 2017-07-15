@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rr.virtual_hospital" >
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".utils.NetworkSingleton"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".profile.VbActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".firstaid.FirstAiActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".firstaid.FirstAidDetailsActivity"
+            android:parentActivityName=".firstaid.FirstAiActivity" />
+        <activity
+            android:name=".emergency_sms.EmergencySms"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".diagonostic.DiagonosticActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".hospital.HospitalDetailsActivity" />
+        <activity
+            android:name=".diagonostic.DiagonosticDetailsActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".doctors.DoctorsDetailsActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".hospital.HospitalListActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".doctors.DoctorsActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ambulance.AmbulanceActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ambulance.AmbulanceDetActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".nav_drawer.Main_Nav"
+            android:theme="@style/AppThemeForNav" />
+        <activity
+            android:name=".user_initiation.SignUp"
+            android:parentActivityName=".user_initiation.Login" />
+        <activity
+            android:name=".Splash_Intro.Splash_IntroActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".info.InfoActivity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".profile.SignUp" />
+        <activity android:name=".profile.Profile" />
+        <activity android:name=".nav_drawer.prescriptions.UploadPrescription" />
+        <activity android:name=".profile.BloodBank" />
+        <activity
+            android:name=".user_initiation.Login"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".nav_drawer.askanexpert.PostQuestion" />
+        <activity android:name=".nav_drawer.askanexpert.PostDetails" />
+
+        <service
+            android:name=".nav_drawer.askanexpert.services.PostEventListener"
+            android:exported="false" />
+        <service
+            android:name=".nav_drawer.askanexpert.services.UnansweredPostEventListener"
+            android:exported="false" />
+        <service
+            android:name=".nav_drawer.askanexpert.services.ConvoEventListener"
+            android:exported="false" />
+
+        <activity
+            android:name=".map.MapsActivity"
+            android:label="@string/title_activity_maps" />
+
+        <receiver android:name=".NewAppWidget" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/new_app_widget_info" />
+        </receiver>
+    </application>
+
+</manifest>

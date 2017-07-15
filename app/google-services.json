@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "200724323345",
+    "firebase_url": "https://virtual-hospital-a7d48.firebaseio.com",
+    "project_id": "virtual-hospital-a7d48",
+    "storage_bucket": "virtual-hospital-a7d48.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:200724323345:android:eeb1bdda3c29ad9e",
+        "android_client_info": {
+          "package_name": "com.example.rr.virtual_hospital"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "200724323345-mjjo95q4pvvebcv3gmd642ctra6fgb5g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rr.virtual_hospital",
+            "certificate_hash": "06439ef2f229fb2f76730f5f81ad9ef5a6187e6a"
+          }
+        },
+        {
+          "client_id": "200724323345-h0kc68veau6i6abfvrduqj5pict1eih8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_8n-YR1AZDxPH2hgzwVT23Udt4HnX1Cw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "200724323345-h0kc68veau6i6abfvrduqj5pict1eih8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

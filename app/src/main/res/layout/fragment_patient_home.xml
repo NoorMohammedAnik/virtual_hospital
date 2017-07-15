@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rr.virtual_hospital.nav_drawer.askanexpert.PatientHome">
+
+
+
+    <ImageButton
+        android:id="@+id/aae_post_question"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:src="@drawable/ic_add_post"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_above="@id/aae_post_question"
+        android:id="@+id/aae_recycler_myquestion_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"    ></android.support.v7.widget.RecyclerView>
+</RelativeLayout>

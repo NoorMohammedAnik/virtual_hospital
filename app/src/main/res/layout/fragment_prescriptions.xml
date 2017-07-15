@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rr.virtual_hospital.nav_drawer.prescriptions.Prescriptions">
+
+
+    <ImageButton
+        android:id="@+id/btn_upload_prescs"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:src="@drawable/ic_add_post"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_above="@id/btn_upload_prescs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_prescription_display"
+        android:scrollbars="vertical">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

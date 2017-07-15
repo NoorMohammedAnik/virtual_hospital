@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="@drawable/boarder_white">
+    <TextView
+        android:layout_below="@id/post_detail_textbb"
+        android:text="YOUR QUESTIONS ARE BEING ANSWERED BY:"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:id="@+id/reply_doc_name"
+        android:textColor="@color/colorPrimary"
+        android:text="Doctor's Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/reply_doc_layer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <TextView
+            android:id="@+id/reply_doc_title"
+            android:layout_weight="1"
+            android:text="Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/reply_doc_institution"
+            android:layout_weight="1"
+            android:text="Institution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/reply_doc_speciality"
+            android:layout_weight="1"
+            android:text="Speaciality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/reply_doc_layer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <TextView
+            android:id="@+id/reply_doc_year"
+            android:layout_weight="1"
+            android:text="Year of study"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/reply_doc_reg_num"
+            android:layout_weight="1"
+            android:text="Registration Number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
