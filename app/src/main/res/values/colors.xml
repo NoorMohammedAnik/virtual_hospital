@@ -54,4 +54,5 @@
 
     </array>
 
+    <color name="new_app_widget_info">#000000</color>
 </resources>

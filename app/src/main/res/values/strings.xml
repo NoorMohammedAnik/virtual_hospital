@@ -50,5 +50,6 @@
     <string name="title_activity_main__nav">Main_Nav</string>
     <string name="appwidget_text">EXAMPLE</string>
     <string name="add_widget">Add widget</string>
+    <string name="new_app_widget_info">Widget Info</string>
 
 </resources>
